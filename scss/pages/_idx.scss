@@ -1,7 +1,4 @@
 .idx {
-  // &top {
-  //   padding: 20px 0;
-  // }
   &mrt{
     &__list {
       list-style: disc;
@@ -12,6 +9,7 @@
   &frm {
     &__form{
       max-width: 600px;
+      margin-top: 20px;
     }
   }
   &ref{
