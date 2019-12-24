@@ -1,0 +1,24 @@
+.idx {
+  // &top {
+  //   padding: 20px 0;
+  // }
+  &mrt{
+    &__list {
+      list-style: disc;
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+  }
+  &frm {
+    &__form{
+      max-width: 600px;
+    }
+  }
+  &ref{
+    &__txt{
+      a{
+        color: $grey1;
+      }
+    }
+  }
+}

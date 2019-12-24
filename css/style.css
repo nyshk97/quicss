@@ -1,0 +1,423 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  background: #f5f5f5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.7;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nsp {
+    display: none;
+  }
+}
+
+.container {
+  max-width: 800px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+}
+
+.btn, .btn-outline {
+  border: none;
+  display: inline-block;
+  background: #39f;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:hover, .btn-outline:hover {
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.btn:focus, .btn-outline:focus {
+  outline: none;
+}
+
+.btn-outline {
+  background: transparent;
+  border: solid 1px #6c757d;
+  color: #6c757d;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-outline:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form {
+  line-height: 1.5;
+}
+
+.form__group {
+  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
+}
+
+.form__name {
+  font-size: inherit;
+  display: block;
+}
+
+.form__txt {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  color: #495057;
+  display: block;
+  height: 38px;
+  height: calc(1.5em + 1.2rem + 2px);
+  padding: 6px 12px;
+  padding: 0.6rem 1.2rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  width: 100%;
+}
+
+.form__txt:focus {
+  outline: 0;
+  border-color: #80bdff;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form__radio {
+  display: none;
+}
+
+.form__radio:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  background: #39f;
+  border-radius: 50%;
+}
+
+.form__radio + label {
+  display: inline-block;
+  padding-left: 25px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.form__radio + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
+
+.form__file input[type="file"] {
+  display: none;
+}
+
+.form__file label {
+  background: #39f;
+  color: white;
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.form__file label:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.form__file label:after {
+  content: "選択されていません";
+  color: #333;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: -140px;
+  top: calc(50% - 10px);
+}
+
+.form__file label.changed:after {
+  content: "";
+}
+
+.form__file .filename {
+  font-size: 12px;
+}
+
+input[type="date"].form__txt {
+  width: 200px;
+}
+
+textarea.form__txt {
+  height: 100px;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 30px 0 10px;
+}
+
+.header {
+  border-bottom: 2px solid #f5f5f5;
+  background: #fff;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  height: 100px;
+}
+
+.header__title {
+  font-size: 4rem;
+  line-height: 100px;
+  color: #39f;
+}
+
+.gnav__list {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gnav__list li a {
+  padding: 20px;
+  display: block;
+}
+
+.gnav__list li a i {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.main {
+  background: #fff;
+  max-width: 800px;
+  padding: 20px 30px 40px;
+  margin: 35px auto;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 20px 10px 40px;
+  }
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer small {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+}
+
+.idxmrt__list {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+.idxfrm__form {
+  max-width: 600px;
+}
+
+.idxref__txt a {
+  color: #6c757d;
+}
+/*# sourceMappingURL=style.css.map */

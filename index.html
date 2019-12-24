@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="/js/function.js"></script>
+  <title>QuiCSS</title>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo">
+        <h1 class="header__title">QuiCSS</h1>
+      </div>
+      <nav class="gnav">
+        <ul class="gnav__list">
+          <li><a href="#"><i class="fas fa-search"></i>Qiita</a></li>
+          <li><a href="#"><i class="fab fa-github"></i>GitHub</a></li>
+          <div class="gnav__outer">
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="idxtop container">
+      <h2 class="title idxtop__title">QuiCSSとは?</h2>
+      <p class="idxtop__txt">QuiCSS（クイックス）は、迷う時間を最小化し高速でコーディングをするために設計された、BEMベースのコーディング規約です。</p>
+    </div>
+
+    <div class="idxmrt">
+      <div class="container idxmrt__container">
+        <h2 class="title idxmrt__title">メリット</h2>
+        <ul class="idxmrt__list">
+          <li>どのタグにクラスをつけるか迷わなくなる</li>
+          <li>HTMLとCSSを行ったり来たりする必要がなくなる</li>
+          <li>クラス名を考えるのが楽になる</li>
+          <li>クラス名が重複する可能性がほとんど無い</li>
+          <li>CSSをどのファイルに書くべきかが明確</li>
+          <li>学習コストが低い</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="idxfrm">
+      <div class="container idxfrm__container">
+        <h2 class="title idxfrm__title">フォームサンプル</h2>
+        <p class="idxfrm__txt -first">compornentsの使用例として、フォームのサンプルをご紹介します。</p>
+        <p class="idxfrm__txt -second">使用しているコンポーネントは「form」「btn」の2つです。</p>
+        <form action="#" class="form idxfrm__form">
+          <div class="form__group idxfrm__group _name">
+            <label for="name" class="form__name">名前</label>
+            <input type="text" class="form__txt">
+          </div>
+          <div class="form__group indfrm__group _txtarea">
+            <label for="" class="form__name">本文</label>
+            <textarea class="form__txt" name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="form__group idxfrm__group _radio">
+            <input type="radio" class="form__radio" id="draft" name="status" checked>
+            <label for="draft">下書き</label>
+            <input type="radio" class="form__radio" id="public" name="status">
+            <label for="public">公開</label>
+          </div>
+          <div class="form__group idxfrm__group file">
+            <div class="form__file idxfrm__file">
+              <input type="file" id="01" name="01" class="file">
+              <label for="01">ファイルを選択</label>
+            </div>
+          </div>
+          <div class="idxfrm__submit">
+            <a href="#" class="btn-outline">戻る</a>
+            <input type="submit" class="btn" value="送信">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="idxref">
+      <div class="container idxref__container">
+        <h2 class="title idxref__title">参考</h2>
+        <p class="idxref__txt -first"><a href="#">スピードに特化したコーディング規約【QuiCSS】</a></p>
+        <p class="idxref__txt -second"><a href="#">quicss - GitHub</a></p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© d0ne1s</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>
