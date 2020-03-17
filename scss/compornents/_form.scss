@@ -4,6 +4,12 @@
     //項目名とinput等の1つのかたまり
     margin-bottom: 16px;
     margin-bottom: 1.6rem;
+    &.inline {
+      display: flex;
+      label {
+        width: 150px;
+      }
+    }
   }
   &__name {
     //項目名
@@ -28,21 +34,6 @@
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     }
   }
-  // &__check {
-  //   //checkbox
-  //   position: relative;
-  //   padding-left: 20px;
-  //   padding-left: 2rem;
-  //   &--input {
-  //     position: absolute;
-  //     margin-left: -20px;
-  //     margin-left: -2rem;
-  //     margin-top: 0.6rem;
-  //   }
-  //   &--label {
-  //     margin-bottom: 0;
-  //   }
-  // }
   &__radio {
     //radio button
     display: none;
