@@ -18,9 +18,13 @@
         display: block;
         label {
           display: block;
+          width: 100%;
           margin-bottom: 4px;
         }
       }
+    }
+    &.-mb {
+      margin-bottom: 24px;
     }
   }
   &__name {
@@ -83,11 +87,12 @@
     & + label {
       padding-left: 20px;
       position: relative;
+      display: block;
       &:before {
         content: "";
         display: block;
         position: absolute;
-        top: 0px;
+        top: 3px;
         left: -6px;
         width: 20px;
         height: 20px;

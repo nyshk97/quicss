@@ -214,6 +214,8 @@ img {
 
 .form {
   line-height: 1.5;
+  max-width: 600px;
+  margin: auto;
 }
 
 .form__group {
@@ -225,10 +227,32 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form__group.inline label {
   width: 150px;
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .form__group.inline {
+    display: block;
+  }
+  .form__group.inline label {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+}
+
+.form__group.-mb {
+  margin-bottom: 24px;
 }
 
 .form__name {
@@ -292,6 +316,34 @@ img {
   height: 20px;
   border: 1px solid #999;
   border-radius: 50%;
+}
+
+.form__check {
+  display: none;
+}
+
+.form__check + label {
+  padding-left: 20px;
+  position: relative;
+  display: block;
+}
+
+.form__check + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: -6px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  border-radius: 0;
+}
+
+.form__check:checked + label:before {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpolyline fill='none' stroke='%230bd' stroke-width='3' points='2,7.3 7.3,12.7 18,2 '/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
 }
 
 .form__file input[type="file"] {
