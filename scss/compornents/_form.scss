@@ -1,13 +1,25 @@
 .form {
   line-height: 1.5;
+  max-width: 600px;
+  margin: auto;
   &__group {
     //項目名とinput等の1つのかたまり
     margin-bottom: 16px;
     margin-bottom: 1.6rem;
     &.inline {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
       label {
         width: 150px;
+        margin-right: 16px;
+      }
+      @include sp {
+        display: block;
+        label {
+          display: block;
+          margin-bottom: 4px;
+        }
       }
     }
   }
@@ -64,6 +76,29 @@
         border: 1px solid #999;
         border-radius: 50%;
       }
+    }
+  }
+  &__check {
+    display: none;
+    & + label {
+      padding-left: 20px;
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: -6px;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #999;
+        border-radius: 0;
+      }
+    }
+    &:checked + label:before {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpolyline fill='none' stroke='%230bd' stroke-width='3' points='2,7.3 7.3,12.7 18,2 '/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: 0 2px;
     }
   }
   &__file {
